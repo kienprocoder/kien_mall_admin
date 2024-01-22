@@ -7,11 +7,14 @@ module.exports = defineConfig({
 			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
 		}
   },
-    css: {
-      loaderOptions: {
-          sass: {
-              prependData: '@import "@/assets/styles/main.css";',
-          }
-      }
+  css: {
+    loaderOptions: {
+        sass: {
+            prependData: '@import "@/assets/styles/main.css";',
+        }
     }
+  },
+  devServer: {
+    port: 8081,
+  }
 })
