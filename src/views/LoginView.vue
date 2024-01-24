@@ -52,7 +52,7 @@ export default {
         password: this.password
       }).then(response => {
         localStorage.setItem('token', response.data?.accessToken)
-        this.$router.push('/dashboard')
+        this.$router.push('/home')
       }).catch(error => {
         this.errorMessage = error.response.data.message
         if (this.username.length == 0 && this.password.length == 0) {

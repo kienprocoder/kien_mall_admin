@@ -11,10 +11,13 @@
 
         <v-list density="compact" nav class="ob-menu">
           <router-link to="/dashboard">
-            <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard"></v-list-item>
+            <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard" class="d-none"></v-list-item>
           </router-link>
           <router-link to="/home">
-            <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
+            <v-list-item prepend-icon="mdi-view-dashboard" title="Home" value="home"></v-list-item>
+          </router-link>
+          <router-link to="/department">
+            <v-list-item prepend-icon="mdi-home-city" title="Department" value="department"></v-list-item>
           </router-link>
 
           <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
